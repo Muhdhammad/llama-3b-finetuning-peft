@@ -3,6 +3,8 @@ This repo contains a LoRA adapter finetuned on Meta Llama 3.2 (3B), trained usin
 
 Hugging Face model: [MagicaNeko/llama-3b-lora-dolly](https://huggingface.co/MagicaNeko/llama-3b-lora-dolly)
 
+Colab Training notebook: [Colab link](https://colab.research.google.com/drive/1awDTodQo_5eYVC0OeU8IhQNYSsR7SBO2?usp=sharing)
+
 ## Model Details
 - **Base Model:** [meta-llama/Llama-3.2-3B](https://huggingface.co/meta-llama/Llama-3.2-3B)
 - **Model Type:** LoRA adapter for causal language modeling
@@ -121,9 +123,6 @@ inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 outputs = model.generate(**inputs, max_new_tokens=128)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))```
 ```
-
-## Training Code
-The training notebook is available at: [Colab link](https://colab.research.google.com/drive/1awDTodQo_5eYVC0OeU8IhQNYSsR7SBO2?usp=sharing)
 
 ## License
 This LoRA adapter is released as open-source under the Apache 2.0 License.
