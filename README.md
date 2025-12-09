@@ -10,6 +10,8 @@ This repo contains a LoRA adapter finetuned on Meta Llama 3.2 (3B), trained usin
 - **Quantization:** 4-bit NF4 
 - **Language:** English
 
+<img src="assets/finetuning workflow.png" width="600">
+
 
 ## Training Data
 - **Dataset:** [databricks-dolly-1k](https://huggingface.co/datasets/MagicaNeko/databricks-dolly-1k) subset of [databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k)
